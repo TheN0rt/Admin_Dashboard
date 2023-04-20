@@ -1,0 +1,22 @@
+
+.home{
+   display: flex;
+
+   .container{
+      display: flex;
+      flex-direction: column;
+      margin: 0 20px;
+
+      .widgets{
+         display: flex;
+         justify-content: space-between;
+      }
+
+      .charts{
+         display: flex;
+         align-items: center;
+         gap: 20px;
+         margin-bottom: 40px;
+      }
+   }
+}

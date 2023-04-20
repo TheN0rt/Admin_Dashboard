@@ -1,0 +1,92 @@
+.list-products{
+   // min-height: 80%;
+
+   .header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .actions{
+         display: flex;
+         gap: 10px;
+         margin-bottom: 20px;
+   
+         .category{
+            padding: 10px;
+            border-radius: 10px;
+            background-color: transparent;
+            color: blueviolet;
+            border: 1px solid blueviolet;
+            font-weight: 600;
+            font-size: 18px;
+            cursor: pointer;
+   
+            &:hover{
+               color: white;
+               background-color: blueviolet;
+            }
+   
+            &.active{
+               color: white;
+               background-color: blueviolet;
+            }
+         }
+      }
+   }
+
+   .container{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+
+      .item{
+         box-sizing: border-box;
+         padding: 20px;
+         -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+         -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+         box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+         border-radius: 10px;
+         // flex: 10;
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         justify-content: space-between;
+         flex-basis: 32%;
+         height: 390px;
+
+         & > img{
+            width: 100px;
+            height: 100px;
+         }
+
+         .info{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .title{
+               color: gray;
+            }
+   
+            .category-name{
+               font-size: 18px;
+            }
+
+            .desc{
+
+            }
+
+            .cost{
+               font-size: 24px;
+
+            }
+         }
+      }
+
+      .warning{
+         color: gray;
+         font-size: 24px;
+      }
+   }
+}

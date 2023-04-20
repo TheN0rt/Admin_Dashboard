@@ -1,0 +1,84 @@
+.revenue{
+   flex: 2;
+   display: flex;
+   flex-direction: column;
+   padding: 40px 20px;
+   -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+   -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+   box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+
+   .top{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // padding: 20px;
+      color: gray;
+      margin-bottom: 20px;
+
+      & > .icon {
+         cursor: pointer;
+
+         &:hover{
+            color: black;
+         }
+      }
+   }
+
+   .bottom{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      .title{
+         font-size: 20px;
+         font-weight: 600;
+         // color: gray;
+      }
+
+      .amount{
+         font-size: 30px;
+      }
+
+      .desc{
+         text-align: center;
+         font-size: 14px;
+         color: gray;
+      }
+
+      .targets{
+         display: flex;
+         gap: 20px;
+
+         .item{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+
+            .title{
+               color: gray;
+            }
+
+            .counter{
+               display: flex;
+               align-items: center;
+               gap: 5px;
+               font-size: 24px;
+
+               &.positive{
+                  color: green;
+               }
+
+               &.negative{
+                  color: red;
+
+                  & > .icon{
+                     transform: rotate(180deg);
+                  }
+               }
+            }
+         }
+      }
+   }
+}
